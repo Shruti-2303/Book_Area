@@ -35,7 +35,7 @@
         <ul class="navbar-nav mr-auto">
 
 {#            <li class="nav-item">#}
-{#                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Welcome {{ request.user }}</a>#}
+{#                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">aagaman {{ request.user }}</a>#}
 {#            </li>#}
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/users/logout" method="post">
@@ -93,7 +93,7 @@
                             <h4 class="white-text my-4">Book an area with Django. You may book any area of any college through the portal.</h4>
 
                             <p>You are not logged in</p>
-                            
+
                             Goto <a href="/users/login">login</a> to login to the website.
                         </div>
                     </div>
@@ -118,7 +118,7 @@
     else
     showSnackBar("{{message}}",hasAction = false,actionText = String(),isNormal = true,isWarning = false);
     {% endfor %}
-    
+
 </script>
 {% endif %}
 </html>
